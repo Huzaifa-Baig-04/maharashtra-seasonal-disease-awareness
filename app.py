@@ -32,7 +32,7 @@ st.set_page_config(
     page_title="Maharashtra Seasonal Disease Awareness",
     page_icon="🌿",
     layout="wide",
-    initial_sidebar_state="expanded",
+    initial_sidebar_state="auto",
 )
 
 
@@ -193,7 +193,37 @@ div[data-testid="stSelectbox"],div[data-testid="stMultiSelect"],div[data-testid=
 .footer-links a { color:#277563 !important;font-weight:600;text-decoration:none; }
 .footer-links a:hover { color:#17483d !important;text-decoration:underline; }
 .footer-note { color:#87968f;text-align:right; }
-@media (max-width:900px) { .block-container{padding:1rem 1rem 2rem}.hero{padding:24px}.hero h1{font-size:1.8rem !important} }
+@media (max-width:900px) {
+    .block-container { padding:1rem 1.25rem 2rem; }
+    .hero { padding:24px; }
+    .hero h1 { font-size:1.8rem !important; }
+}
+@media (max-width:680px) {
+    .block-container { padding:.8rem .8rem 1.5rem; }
+    h1 { font-size:1.75rem !important; }
+    h2 { font-size:1.35rem !important; }
+    h3 { font-size:1.1rem !important; }
+    .hero { padding:20px 18px; border-radius:16px; margin-bottom:16px; }
+    .hero h1 { font-size:1.55rem !important; }
+    .hero p { font-size:.92rem; }
+    .hero-badge { font-size:.72rem; line-height:1.5; border-radius:12px; }
+    .page-description { font-size:.92rem; margin-bottom:1rem; }
+    [data-testid="stHorizontalBlock"] { flex-wrap:wrap; gap:.6rem; }
+    [data-testid="stHorizontalBlock"] > [data-testid="column"] {
+        flex:1 1 100% !important;
+        min-width:100% !important;
+        width:100% !important;
+    }
+    [data-testid="stMetric"] { padding:12px 14px; }
+    div[data-testid="stMetricValue"], div[data-testid="stMetricValue"] *,
+    [data-testid="stMetric"] [data-testid="stMetricValue"] { font-size:1.55rem !important; }
+    [data-testid="stPlotlyChart"] { padding:5px; border-radius:12px; }
+    .stTabs [data-baseweb="tab-list"] { overflow-x:auto; flex-wrap:nowrap; gap:4px; }
+    .stTabs [data-baseweb="tab"] { white-space:nowrap; padding:8px 10px; }
+    .footer { align-items:flex-start; flex-direction:column; gap:.6rem; }
+    .footer-note { text-align:left; }
+    .footer-signature { font-size:1.9rem; }
+}
 </style>
 """, unsafe_allow_html=True)
 
