@@ -29,7 +29,7 @@ LINKEDIN_PROFILE_URL = "https://www.linkedin.com/in/huzaifa-baig-509803388/"
 CONTACT_EMAIL = "anotherhuzaifa@gmail.com"
 
 st.set_page_config(
-    page_title="Maharashtra Seasonal Disease Awareness",
+    page_title="Analysis of Diseases in Maharashtra",
     page_icon="🌿",
     layout="wide",
     initial_sidebar_state="auto",
@@ -260,7 +260,7 @@ if df.empty:
     st.stop()
 
 if section == "Home":
-    page_header("MAHARASHTRA · HISTORICAL SURVEILLANCE", "Seasonal disease awareness", "A clear, community-friendly view of historical reports across Maharashtra. Explore what was recorded, when patterns changed, and where reports came from.")
+    page_header("MAHARASHTRA · HISTORICAL SURVEILLANCE", "Analysis of Diseases in Maharashtra", "A clear, community-friendly view of historical reports across Maharashtra. Explore what was recorded, when patterns changed, and where reports came from.")
     st.markdown(f"<div class='hero'><div class='eyebrow'>Historical data overview</div><h1>See the pattern.<br>Make sense of the season.</h1><p>Explore reported cases across seasons and districts, then find practical ways to stay informed. Historical patterns describe the dataset; they do not predict what will happen next.</p><span class='hero-badge'>Data coverage: {df.Date.min():%Y}–{df.Date.max():%Y} &nbsp;•&nbsp; Source: project surveillance dataset</span></div>", unsafe_allow_html=True)
 
     records = len(df)
