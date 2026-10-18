@@ -24,8 +24,8 @@ DATA_PATHS = [
     BASE_DIR / "Data" / "processed" / "Maharashtra_Feature_Engineered.csv",
     BASE_DIR / "Data" / "processed" / "Maharashtra_Seasonal_Disease_Cleaned.csv",
 ]
-# Add the owner's profile URL and public contact email here when provided.
-LINKEDIN_PROFILE_URL = ""
+# Public creator links shown in the site footer.
+LINKEDIN_PROFILE_URL = "https://www.linkedin.com/in/huzaifa-baig-509803388/"
 CONTACT_EMAIL = "anotherhuzaifa@gmail.com"
 
 st.set_page_config(
